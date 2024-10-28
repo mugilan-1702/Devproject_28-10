@@ -15,7 +15,7 @@
         state: present
   - name: "copy code from GitHub"
     get_url:
-        url: https://www.shubhammishra.in
+        url: https://jayamsbeautystudio.shop
         dest: "/var/www/html/index.php"
   - name: "Start httpd services"
     service:
@@ -27,6 +27,6 @@
        - wget
   - name: terraform install
     unarchive:
-      src: https://releases.hashicorp.com/terraform/0.9.1/terraform_0.9.1_linux_amd64.zip
+      src: https://releases.hashicorp.com/terraform/1.9.3/terraform_1.9.3_linux_amd64.zip
       dest: /usr/bin
       remote_src: True
